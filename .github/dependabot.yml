@@ -1,0 +1,7 @@
+# Simple Dependabot configuration file
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/lodash-example"
+    schedule:
+      interval: "weekly"
