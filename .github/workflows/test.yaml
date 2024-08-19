@@ -1,0 +1,28 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  lodash:
+    name: Lodash Example
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '21'
+
+    - name: Install dependencies
+      run: cd lodash-example && npm install
+
+    - name: Run tests
+      run: cd lodash-example && npm run test
