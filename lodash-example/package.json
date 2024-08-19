@@ -1,0 +1,14 @@
+{
+  "name": "npm-breaking-change",
+  "version": "1.0.0",
+  "description": "Testing breaking changes",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "node src/main-test.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^3.0.0"
+  }
+}
