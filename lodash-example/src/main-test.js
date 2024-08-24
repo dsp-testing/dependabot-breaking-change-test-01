@@ -1,7 +1,7 @@
 const _ = require('lodash');
 
 function getNames(users) {
-  return _.pluck(users, 'user');
+  return _.map(users, 'user');
 }
 
 // Test function
